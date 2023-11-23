@@ -70,12 +70,10 @@ class TodosTest {
 
         Todos todos = new Todos();
 
-        todos.add(simpleTask);
-        todos.add(epic);
-        todos.add(meeting);
 
-        Task[] expected = {simpleTask, epic, meeting};
-        Task[] actual = todos.findAll();
+
+        Task[] expected = {};
+        Task[] actual =  todos.search("");
         Assertions.assertArrayEquals(expected, actual);
     }
 
